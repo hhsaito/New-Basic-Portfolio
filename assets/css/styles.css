@@ -1,18 +1,13 @@
 * {
 	box-sizing: border-box;
 }
-html, body {
-	height: 100%;
-}
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	margin: 0;
-	padding: 0;
 }
-h1, h2 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-weight: bold;
+h1, h2, h3 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-weight: 700;
 }
 header {
 	position: relative;
@@ -22,25 +17,31 @@ header {
 header h1 {
 	background-color: #4aaaa5;
 	color: #FFFFFF;
-	font-size: 28px;
 	display: inline-block;
-	padding: 0.5em 1em;
+	padding: 1em 1.15em;
+	font-size: 30px;
 }
 header ul {
 	float: right;
-	margin-top: 0.8em;
+	margin-top: 2em;
 }
 header ul li {
 	float: left;
-	padding: 0.5em 1em;
+	padding: 0 17px;
 	list-style: none;
-
+	font-size: 18px;
+	border-right: 1px solid #dddddd;
 }
-header ul li a {
+header ul li a, header ul li a:visited {
 	text-decoration: none;
+	color: #999999;
+}
+header ul li a:hover {
+	color: red;
 }
 header ul li:last-child {
 	padding-right: 0;
+	border-right: none;
 }
 .width-960 {
 	width: 960px;
@@ -50,42 +51,131 @@ header ul li:last-child {
 	clear: both;
 }
 main {
-	background-image: url("../images/sayagata-400px.png");
-	min-height: 100%;
-	margin: 0 auto -80px;
+	background-image: url("../../assets/images/sayagata-400px.png");
+	margin: 0 auto/*-80px*/;
 }
 main h2 {
 	color: #4aaaa5;
 	border-bottom: 2px solid #cccccc;
-	padding: 0 0 0.65em;
-	margin-top: 0;
+    
 }
 section {
 	width: 650px;
 	float: left;
 	background: #ffffff;
-	padding: 1em;
-	margin: 1em 0;
+	border: 1px solid #dddddd;
+	margin: 39px 0;
+	padding: 30px;
+}
+section h2 {
+	font-size: 30px;
+	margin-top: 10px;
+	padding: 0 0 28px;
+}
+section p {
+	font-size: 1.1em;
+    line-height: 1.9em;
+    margin: 1.3em 0;
+}
+#about-image {
+	float: left;
+	margin-top: 31px;
+    margin-right: 25px;
+}
+#portfolio-links div {
+	width: 274px;
+	height: 205px;
+	float: left;
+	margin: 2.5em 0 16px 0;
+}
+#portfolio-links div:nth-child(2n) {
+	margin-right: 2.5em;
+}
+#portfolio-links div h3 {
+	background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 1.35em;
+    font-weight: normal;
+    margin-top: 6.3em;
+    padding: 19px;
+    text-align: center;
+}
+#hangman {
+	background-image: url('../../assets/images/vader.jpg');
+}
+#rpg {
+	background-image: url('../../assets/images/turntable.jpg');
+}
+#trivia {
+	background-image: url('../../assets/images/earbuds.jpg');
+}
+/* Just to change things up */
+#portfolio-links div:nth-child(5) {
+	background-image: url('../../assets/images/ipod.jpg');	
+}
+#portfolio-links div:nth-child(6) {
+	background-image: url('../../assets/images/iPad.jpg');	
 }
 aside {
 	float: right;
 	width: 270px;
 	background: #ffffff;
-	padding: 1em;
-	margin: 1em 0;
+	border: 1px solid #dddddd;
+	padding: 30px 30px 40px;
+	margin: 39px 0 0;
+}
+aside h2 {
+	font-size: 22px;
+	padding: 0 0 0.85em;
 }
 aside img {
-	width: 50px;
-	height: 50px;
+	width: 62px;
+	height: 62px;
+	margin-top: 21px;
+	margin-right: 6px;
+}
+aside img:last-child {
+	margin-right: 0;
+}
+form {
+	margin: 1.7em 0 0;
+}
+label {
+	font-size: 1.2em;
+	color: #777777;
+}
+input[type=text], input[type=textarea] {
+	display: block;
+	width: 100%;
+	margin: 0.6em 0 1.2em;
+}
+input[type=text] {
+	padding: 8px;
+}
+input[type=textarea] {
+	height: 200px;
+}
+input[type=submit] {
+	color: #ffffff;
+	background-color:  #4AAAA5;
+	border: none;
+	margin-top: 0.25em;
+    padding: 0.4em 1.35em;
+    font-size: 1.2em;
+}
+input[value="John Smith"], input[value="example@gmail.com"] {
+	color: a9a9a9;
 }
 footer {
 	background-color: #666666;
 	padding: 0.5em;
-	border-top: 6px solid #4AAAA5;
-	height: 80px;
+	border-top: 8px solid #4AAAA5;
+	height: 100px;
 	color: #fff;
 	text-align: center;
 }
-.push {
-	height: 80px;
+footer p {
+	font-size: 0.75em;
+    font-weight: 700;
+    margin-top: 2.9em;
 }
