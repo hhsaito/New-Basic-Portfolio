@@ -164,7 +164,7 @@ input[type=submit] {
     font-size: 1.2em;
 }
 input[value="John Smith"], input[value="example@gmail.com"] {
-	color: a9a9a9;
+	color: #a9a9a9;
 }
 footer {
 	background-color: #666666;
